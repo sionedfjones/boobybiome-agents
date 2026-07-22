@@ -45,9 +45,18 @@ Check whether the `boobybiome-brand` skill (or a newer session-scoped `boobybiom
 
 ## Output and filing
 
+- Build every draft as **HTML, not plain text**, and upload it via Google Drive's `create_file` with `content_mime_type: "text/html"` (no `disable_conversion_to_google_type`) so Drive's converter produces a real Google Doc with native headings/bold/bullets — never a doc full of literal `##`/`**`/`\-` characters.
+- There is no Docs-editing tool available, only Drive's create/copy/read. Reformatting an existing draft means creating a new, correctly formatted Doc and telling Sioned to delete the old one herself — there is no way to edit a Doc's body in place with the current toolset.
 - Save each finished draft as a Google Doc in Google Drive, inside **Marketing → 12. Blogs** (create the `12. Blogs` folder inside `Marketing` if it doesn't exist yet).
 - Doc naming: `YYYY-MM-DD · Draft · <post title>`.
-- Start every doc with a metadata block before the post body: target keyword, secondary keywords, meta title, meta description, slug, word count, internal/external links used, citations list, and status (`Draft` until Sioned marks otherwise).
+- **Document order:** logo, then a one-line status tag, then the post itself (title through FAQ/closing), then the metadata block as an appendix at the very end, after an `<hr>` divider. The metadata block never goes at the top — Sioned wants the post itself visible first when the doc opens.
+- **Branding (Google Docs constraints, per the May 2026 BB001 relaunch brand guidelines Drive doc):**
+  - H1/H2 headings: `font-family:'Source Serif 4', serif`, colour `#1F4A4A` (Holder Teal).
+  - Body paragraphs: `font-family:'PT Serif', serif`, colour `#2A4A40` (Glasshouse). The real brand body font is Sabon, but Sabon isn't in Google Docs' font list — PT Serif is the nearest available serif substitute until Docs can use it directly or this moves to the real CMS.
+  - Captions, the status tag, and the metadata appendix: `font-family:'IBM Plex Sans', sans-serif`, colour `#2A4A40`, smaller size (~10pt).
+  - Logo: embed the Booby Biome black horizontal wordmark (Drive file `Booby Biome_Wordmark_Horizontal_Black.png`, in `Final logo 2025 → Wordmark`) as a base64 data URI `<img>`, centred, ~40px tall, at the very top of the doc. Downsample it first (e.g. via `sips`) before base64-encoding — the source file is large enough that the full-resolution base64 payload is unreliable to pass as a tool parameter.
+  - Drive's HTML→Docs conversion can't be visually verified through the API (`read_file_content` only returns text) — after creating a doc, say plainly that the image/font rendering needs a human check rather than asserting it worked.
+- Start the metadata appendix with all of: target keyword, secondary keywords, meta title, meta description, slug, word count, internal/external links used, citations list, and status (`Draft` until Sioned marks otherwise).
 - Maintain a content calendar in Notion (search for an existing one — Gramingo already runs one for Instagram — before creating a new database) tracking: topic, pillar, target keyword, status, and publish date, so cluster coverage builds without duplicate topics across the three-a-week cadence.
 
 ## Brand voice (snapshot — verify against the live `boobybiome-brand` skill first)
