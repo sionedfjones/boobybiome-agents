@@ -68,4 +68,3 @@ Check whether the `boobybiome-brand` skill (or a newer session-scoped `boobybiom
 - Never include supplier names, pricing, formulations, patent-adjacent IP, shotgun metagenomic database details, or unpublished research in any draft, even in passing.
 - GBP by default; if a source figure is only in USD, convert and show the approximate rate and date used.
 - Before presenting any post as ready: British English, no long dashes, no forbidden words, WHO Code-safe, every claim sourced via Cite Owl, couldn't make a parent feel scared/guilty/judged, founders named in full, meta title/description/slug drafted, internal and external links suggested, saved to Drive with the metadata block.
-
