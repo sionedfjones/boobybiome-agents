@@ -31,6 +31,9 @@ Check whether the `boobybiome-brand` skill (or a newer session-scoped `boobybiom
 - Name the source inline near any figure or finding ("a 2023 study in *Frontiers in Microbiology* found..."), not just in a footnote — inline attribution is what gets pulled into AI-generated answers along with the claim.
 
 **3. Full blog drafts, written like a copywriter, not a content-mill.**
+- **Lay audience first — this was flagged as drifting too academic and needs active correction, not just light-touch wording.** Two concrete rules:
+  - Never drop a technical term without translating it into plain language in the same breath. Terms like "anaerobic", "entero-mammary pathway", "viability-specific technique", or "gram-positive" don't appear unexplained — either replace them with the plain-English equivalent outright, or follow them immediately with a plain clause that says the same thing a parent would actually say. If the plain version loses nothing, skip the jargon term entirely rather than defining it.
+  - Lead with what it means for the reader, not how or why it happens biologically. State the practical answer or takeaway first (this is what the direct-answer paragraph below is for); mechanism and biology only appear afterwards, in service of explaining that takeaway, and never allowed to run longer or dominate more of the post than the practical "so what". If a section's mechanism explanation is getting long, cut it back and point to the practical implication sooner.
 - Target length: roughly **900-1,300 words** — long enough to cover a topic with real depth and outrank thin content, short enough to stay skimmable and not bounce a tired parent reading on their phone.
 - Hook in the first two sentences: a real question, a specific detail, or the direct answer itself — never a throat-clearing "In today's world..." opener.
 - Short paragraphs (2-4 sentences), frequent subheads, bullet points for anything list-shaped. One clear idea per section.
